@@ -22,7 +22,12 @@ function App() {
     <h1>Posts</h1>
     { !posts ? 'Cargando...' :
       posts.map( (post,index) =>{
-        return <li>{post.title}</li>
+        return (
+          <div>
+            <h3>Usuario{post.userId}:</h3> {post.title}
+            {/*<img src="https://media.revistagq.com/photos/5ca5fe4e3492a90c37bf1d13/3:4/w_363,h_484,c_limit/huron_gq_9670.jpg"/>*/}
+          </div>
+        )
       })
     }
     </div>
